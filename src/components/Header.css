@@ -1,0 +1,28 @@
+/* Header component CSS */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffcc80, #66bb6a);
+    padding: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .logo-placeholder {
+    position: absolute;
+    left: 20px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
