@@ -50,6 +50,14 @@
   background-color: #57a65a;
 }
 
+.user-form .button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  grid-column: 1 / -1; /* Span the full width of the grid */
+  margin-top: -2px; /* Space above the button container */
+}
+
 /* Success and error message styling */
 .user-form .success-message {
   color: green;

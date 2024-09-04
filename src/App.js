@@ -39,7 +39,7 @@ function App() {
         </div>
       )}
       {view === 'register' && (
-        <UserForm onSubmit={handleFormSubmit} />
+        <UserForm onSubmit={handleFormSubmit} onReset={handleReset}/>
       )}
       {view === 'details' && (
         <DetailsDisplay

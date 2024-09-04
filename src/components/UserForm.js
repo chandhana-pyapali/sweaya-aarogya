@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './UserForm.css'; // Add this line to import the CSS for styling
 
-function UserForm({ onSubmit }) {
+function UserForm({ onSubmit, onReset }) {
   // State to hold form data
   const [formData, setFormData] = useState({
     name: '',
@@ -218,7 +218,10 @@ function UserForm({ onSubmit }) {
           />
         </div>
 
-      <button type="submit">Save</button>
+        <div className="button-container">
+          <button type="submit">Save</button>
+          <button type="button" onClick={onReset}>Back to Home</button>
+        </div>
       </form>
     </div>
   );
