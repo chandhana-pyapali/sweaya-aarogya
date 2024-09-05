@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo-placeholder"></div>
-      <h1>Sweaya Aarogya</h1>
+      <h1>Swaya Aarogya</h1>
     </header>
   );
 }
