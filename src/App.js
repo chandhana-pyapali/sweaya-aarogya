@@ -43,9 +43,14 @@ function App() {
       console.log(response);
       if (response.ok) {
         const result = await response.json();
-        setFormData(JSON.parse(result.body)); // Set fetched data
-        setAarogyaId(inputId); // Set the Aarogya ID
-        setView('details'); // Navigate to details view
+        if(result.statusCode === 200) {
+          setFormData(JSON.parse(result.body)); // Set fetched data
+          setAarogyaId(inputId); // Set the Aarogya ID
+          setView('details'); // Navigate to details view
+        }
+        else {
+          alert(JSON.parse(result.body).message);
+        }
       } else {
         alert('Failed to fetch beneficiary details.');
       }
